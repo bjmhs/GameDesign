@@ -205,6 +205,17 @@ public class PlayerController : MonoBehaviour
         hpSlider.value = currHP / maxHP;
     }
 
+    public void Speedup(float value)
+    {
+        movespeed += value;
+        Debug.Log("Speed is now" + movespeed.ToString());
+    }
+
+    public void Poison(float value)
+    {
+        TakeDamge(value);
+    }
+
     //Destroys player object and triggers scene stuff.
     private void Die()
     {

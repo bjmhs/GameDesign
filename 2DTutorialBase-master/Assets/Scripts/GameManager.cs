@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    public void Level2Scene()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+
     public void WinGame()
     {
         SceneManager.LoadScene("WinScene");
